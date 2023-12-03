@@ -5,11 +5,10 @@ public class Day3 {
     public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(new File("day3.dat"));
         int sum = 0;
-        int size = 10;
+        int size = 140;
         String[][] schem = new String[size][size];
         int row = 0;
         ArrayList<String> lines = new ArrayList<String>();
-        ArrayList<Coords> locs = new ArrayList<Coords>();
         while (in.hasNextLine()) {
             String line = in.nextLine();
             lines.add(line);
@@ -40,10 +39,6 @@ public class Day3 {
             }
             System.out.println();
         }
-        for (Coords coor : locs) {
-            System.out.println(coor.getX() + " " + coor.getY());
-        }
-
         System.out.println(sum);
     }
 

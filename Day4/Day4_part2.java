@@ -54,3 +54,5 @@ public class Day4_part2 {
         System.out.println(totalCards);
     }
 }
+
+// Answer: 5833065

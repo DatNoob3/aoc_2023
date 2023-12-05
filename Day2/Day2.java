@@ -1,6 +1,8 @@
 import java.util.*;
 import java.io.*;
 
+// 12/2/2023
+
 public class Day2 {
     public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(new File("day2.dat"));

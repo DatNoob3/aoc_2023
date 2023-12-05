@@ -1,6 +1,8 @@
 import java.util.*;
 import java.io.*;
 
+
+
 public class Day3 {
     public static void main(String[] args) throws IOException {
         Scanner in = new Scanner(new File("day3.dat"));
@@ -25,21 +27,23 @@ public class Day3 {
             for (int c=0; c<schem[0].length; c++) {
                 if (Character.isDigit(schem[r][c].charAt(0)) && check(r, c, schem)) {
                     System.out.println("passes " + c);
+                    int curr = 0;
                     for (String n : nums) {
-                        int ind = line.indexOf(n);
-                        // range is from one more/less from the indexes that the number takes up
-                        if (c >= ind-1 && c <= ind+n.length()) {
+                        int ind = line.indexOf(n); // updates every loop
+                        if (c >= curr+ind && c <= curr+ind+n.length()-1) {
                             System.out.println(n + "-" + ind);
                             sum += Integer.parseInt(n);
                             System.out.println("sum = " + sum);
-                            c = ind+n.length();
+                            curr = ind+n.length();
                         }
+                        line = line.substring(ind);
                     }
                 }
             }
             System.out.println();
         }
         System.out.println(sum);
+        System.out.println(556367-556055);
     }
 
     public static boolean check(int row, int col, String[][] array) {

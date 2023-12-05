@@ -1,6 +1,9 @@
 import java.util.*;
 import java.io.*;
 
+// 12/1/2023 - 12:24 AM
+// Stayed up for the drop, took way too long
+
 public class Day1 {
     public static void main(String[] args) throws IOException{
         Scanner in = new Scanner(new File("day1.dat"));

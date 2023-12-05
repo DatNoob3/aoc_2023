@@ -1,6 +1,9 @@
 import java.util.*;
 import java.io.*;
 
+// 12/1/2023 - 12:43
+// I'm literally stupid 
+
 public class Day1_part2 {
     public static void main(String[] args) throws IOException{
         Scanner in = new Scanner(new File("day1.dat"));

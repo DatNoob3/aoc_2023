@@ -52,14 +52,7 @@ public class Day3v2 {
                             endCol++;
                         }
                         Integer[] coord = {newRow, newCol};
-                        // gets rid of duplicates
-                        boolean unique = true;
-                        for (Integer[] co : coords) {
-                            if (co[0] == coord[0] && co[1] == coord[1]) {
-                                unique = false;
-                            }
-                        }
-                        if (unique) coords.add(coord);
+                        coords.add(coord);
                     }
                 }
             }

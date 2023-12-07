@@ -21,8 +21,6 @@ public class Day6_part2 {
         }
         long t = Integer.parseInt(timeStr);
         long d = Long.parseLong(distStr);
-        System.out.println(d);
-        System.out.println(distStr);
         int numWins = 0;
         for (int j=0; j<t; j++) {
             long test = (t - j) * j;
@@ -33,3 +31,5 @@ public class Day6_part2 {
         System.out.println(numWins);
     }
 }
+
+// Answer: 39570185
